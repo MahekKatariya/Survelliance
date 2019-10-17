@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Surveillance</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form" id="cform">
+					<span class="login100-form-title p-b-49">
+						Registration
+					</span>
+					<div class="wrap-input100 validate-input m-b-23" >
+						<span class="label-input100">ID</span>
+						<input class="input100" type="text" name="id" placeholder="Assign ID to agent" id="bid">
+						
+					</div>
+					<div class="wrap-input100 validate-input m-b-23" >
+						<span class="label-input100">Name</span>
+						<input class="input100" type="text" name="aname" placeholder="Name of agent" id="aname">
+						
+					</div>
+					<div class="wrap-input100 validate-input m-b-23" >
+						<span class="label-input100">Email</span>
+						<input class="input100" type="email" name="username" placeholder="Email of agent" id="uname">
+						
+					</div>
+
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="pass" placeholder="Password of agent" id="pass">
+					</div>
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">Blood Group</span>
+						<input class="input100" type="text" name="bg" placeholder="Blood-group of agent" id="bg">
+					</div>
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">Medical</span>
+						<input class="input100" type="text" name="med" placeholder="Old medical records of agent" id="med">
+					</div>
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">Designation</span>
+						<input class="input100" type="text" name="des" placeholder="Designation of agent" id="des">
+					</div>
+					<div>
+						<span class="label-input100">Upload Image of Agent</span>
+						<input class="input100" type="file" accept="image/*" name="img" placeholder="Upload Image  of agent" id="img">
+					</div>				
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" type="submit" id="rsubmit">
+								Submit
+							</button>
+						</div>
+					</div>			
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>

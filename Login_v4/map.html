@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 90%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body,
+        .container-fluid {
+            height: 100%;
+            margin: 50px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="map"></div>
+    </div>
+    <script src="js/map.js">
+        
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-cdgLjNgLx52-5akdiTERxT6hmSXoPyg&callback=initMap" async defer></script>
+</body>
+
+</html>

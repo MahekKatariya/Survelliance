@@ -1,0 +1,52 @@
+<html>
+    <body>
+            <div class="wrap-input100 validate-input m-b-23" >
+                    <span class="label-input100">Enter Id </span>
+                    <input class="input100" type="text" name="id" placeholder="Enter Id you want to delete" id="bid">
+                    
+            </div>
+            <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" type="submit" id="bsubmit">
+                            Login
+                        </button>
+                    </div>
+            </div>	
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBEcGRX3MVgFeFX8g0-16zPtpHVEI-NgMQ",
+            authDomain: "survey-11.firebaseapp.com",
+            databaseURL: "https://survey-11.firebaseio.com",
+            projectId: "survey-11",
+            storageBucket: "survey-11.appspot.com",
+            messagingSenderId: "55566602005",
+            appId: "1:55566602005:web:6b20c34445f9567b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        if (firebase.auth().currentUser) {
+            alert("Please Login First");
+            window.location.href = "index.html";
+        }
+        var id1=document.getElementById('bsubmit');
+        var id=document.getElementById('bid');
+        id1.addEventListener('click',w =>{
+            w.preventDefault();
+            var adaRef = firebase.database().ref(id.value);
+            adaRef.remove()
+                .then(function() {
+                    console.log("Remove succeeded.")
+                })
+                .catch(function(error) {
+                    console.log("Remove failed: " + error.message)
+                });
+            
+        });
+    </script>
+</html>
